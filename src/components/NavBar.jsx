@@ -18,7 +18,7 @@ export default function NavBar() {
             {[
               { name: "Home", path: "/" },
               { name: "Services", path: "/services" },
-              { name: "Works", path: "/projects" },
+              { name: "Works", path: "./projects" },
               { name: "Team", path: "/team" },
               { name: "Features", path: "/features" },
             ].map((item, index) => (
