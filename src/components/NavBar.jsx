@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 export default function NavBar() {
   return (
@@ -18,13 +19,13 @@ export default function NavBar() {
             {[
               { name: "Home", path: "/" },
               { name: "Services", path: "/services" },
-              { name: "Works", path: "./projects" },
+              { name: "Works", path: "/projects" },
               { name: "Team", path: "/team" },
               { name: "Features", path: "/features" },
             ].map((item, index) => (
               <li key={index} className="group relative">
-                <a
-                  href={item.path}
+                <Link
+                  to={item.path}
                   className="flex items-center text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium text-sm lg:text-base"
                 >
                   {item.name}
@@ -42,7 +43,7 @@ export default function NavBar() {
                       d="m19.5 8.25-7.5 7.5-7.5-7.5"
                     />
                   </svg>
-                </a>
+                </Link>
                 <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 group-hover:w-full transition-all duration-300"></div>
               </li>
             ))}
