@@ -94,7 +94,7 @@ export default function Home() {
         />
       </div>
 
-      <div className="">
+      <div className="py-10">
         <Carrusel></Carrusel>
       </div>
     </div>
