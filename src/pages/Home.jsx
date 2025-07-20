@@ -10,9 +10,9 @@ export default function Home() {
         alt="forma"
       />
       <div className="p-5 md:px-5 lg:px-[15%] h-[50%] md:h-[60%] w-[100%] flex relative overflow-hidden z-10 md:justify-baseline">
-        <div className="gap-3  text-center justify-center items-center md:items-baseline flex flex-col max-w-[350px] relative z-20">
+        <div className="gap-3  text-center justify-center items-center md:items-baseline flex flex-col max-w-[350px] md:max-w-[600px] relative z-20">
           <h1
-            className="font-bold text-3xl"
+            className="font-bold text-3xl md:text-4xl lg:text-6xl"
             style={{
               background:
                 "linear-gradient(112.77deg, #C381DB 0%, #4E92F9 100%)",
@@ -23,10 +23,10 @@ export default function Home() {
           >
             Tailwind CSS theme
           </h1>
-          <h2 className="font-semibold text-2xl">
+          <h2 className="font-semibold text-2xl md:text-3xl lg:text-5xl">
             crafted with <span className="font-bold">React + Vite</span>
           </h2>
-          <p className="text-[11px] font-semibold text-gray-500">
+          <p className="text-[18px] font-semibold text-gray-500 text-base">
             This design is powered by Tailwind CSS, the utility-first framework
             for rapid UI development, combined with the speed of React and Vite.
           </p>
